@@ -45,7 +45,7 @@ export default function MainPage(){
                         const [dataPart] = (evento.dataHoraInicio || '').split(' ');
                         const [dia, mes, ano] = (dataPart || '').split('/');
                         if (!dia || !mes || !ano) return false;
-                        return new Date(`${ano}-${mes}-${dia}`) <= hoje;
+                        return new Date(`${ano}-${mes}-${dia}`) >= hoje;
                     });
                     setEventos(futuros);
                 }
@@ -216,17 +216,6 @@ export default function MainPage(){
             {/* Container responsivo mobile-first */}
             <div className="px-4 py-6 md:px-8 md:py-12 lg:max-w-6xl lg:mx-auto lg:py-16">
 
-                {/* Botão Voltar */}
-                <button 
-                    onClick={() => navigate('/')}
-                    className="flex items-center gap-2 text-primary-default bg-transparent border-none outline-none hover:opacity-80 transition-opacity mb-6 md:mb-8 cursor-pointer"
-                >
-                    <ArrowLeft />
-                    <Typography size="body" weight="medium" className="text-primary-default">
-                        Voltar
-                    </Typography>
-                </button>
-
                 {/* SEÇÃO 1: Logo, Tags, Texto e Botão */}
                 <section className="mb-8 md:mb-16 lg:mb-20 flex flex-col items-center">
                     {/* Imagem*/}
@@ -347,7 +336,7 @@ export default function MainPage(){
 
                     {/* Link Ver Mapa */}
                     <div className="text-center">
-                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://maps.app.goo.gl/QuZr6NbF1oAUZF1t8" target="_blank" rel="noopener noreferrer">
                             <Typography 
                                 tag="p"
                                 size="body" 
