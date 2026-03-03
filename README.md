@@ -84,10 +84,3 @@ npm run preview
 	- `pages/` — páginas da aplicação (ex.: `MainPage.jsx`, `Mercado.jsx`)
 	- `assets/` — imagens e fontes
 
-## Contato
-
-Para dúvidas sobre o projeto ou conteúdo, use as issues do GitHub ou entre em contato com o time responsável (incluir contatos internos, se houver).
-
----
-
-README gerado/atualizado automaticamente para fornecer contexto e instruções de desenvolvimento do projeto CONVIVA.
